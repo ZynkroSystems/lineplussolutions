@@ -1,0 +1,63 @@
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import engineerImage from "@/assets/engineer-inspection.jpg";
+
+const AboutPreview = () => {
+  return (
+    <section className="py-16 md:py-24 bg-muted/30">
+      <div className="container mx-auto px-4">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Image */}
+          <div className="order-2 lg:order-1">
+            <div className="relative rounded-lg overflow-hidden shadow-xl">
+              <img
+                src={engineerImage}
+                alt="Engineer inspecting bakery machinery with clipboard"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Content */}
+          <div className="order-1 lg:order-2 space-y-6">
+            <h2 className="text-3xl md:text-4xl font-bold">
+              Built on Experience, <span className="text-secondary">Trusted for Results</span>
+            </h2>
+            
+            <div className="space-y-4 text-base md:text-lg">
+              <p>
+                Lineplus Solutions Ltd is led by a mechanical engineer who has spent
+                nearly two decades inside bakery production facilities — not behind a
+                desk, but on the factory floor.
+              </p>
+              
+              <p>
+                We specialize in the machinery that produces pita bread, naan, Arabic
+                flatbread, and tortillas: tunnel ovens, dough dividers, cooling
+                conveyors, metal detectors, proofers, and packaging lines.
+              </p>
+              
+              <p>
+                Our approach is simple: understand how each machine works, anticipate
+                where failures happen, and build maintenance systems that prevent
+                problems before they stop production.
+              </p>
+              
+              <p>
+                Whether you're running a single production line or managing multiple
+                shifts, we provide the hands-on engineering support and audit-ready
+                documentation your bakery needs to stay productive and compliant.
+              </p>
+            </div>
+
+            <Button asChild size="lg" variant="outline">
+              <Link to="/about">Learn More About Our Experience</Link>
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AboutPreview;
