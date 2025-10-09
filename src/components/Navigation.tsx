@@ -33,7 +33,13 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-3">
+            <img
+              src="/logo.png"
+              alt="Lineplus Solutions logo"
+              className="h-8 w-8 md:h-10 md:w-10 object-contain"
+              loading="lazy"
+            />
             <div className="font-heading font-bold text-xl md:text-2xl text-primary">
               Lineplus <span className="text-secondary">Solutions</span>
             </div>
