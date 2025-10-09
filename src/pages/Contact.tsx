@@ -17,7 +17,7 @@ const Contact = () => {
             </h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto opacity-90">
               Whether you need emergency repairs, PPM program setup, or audit
-              documentation — we're here to help
+              documentation, we're here to help
             </p>
           </div>
         </section>
