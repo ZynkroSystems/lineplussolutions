@@ -79,9 +79,24 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm opacity-90">
           <p>© {currentYear} Lineplus Solutions Ltd. All rights reserved.</p>
-          <p className="mt-2 md:mt-0 text-xs opacity-70">
-            Website by AutomateFlow
-          </p>
+          <a
+            href="https://zynkrosystems.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 md:mt-0 flex items-center gap-2 hover:opacity-100 transition-opacity group"
+          >
+            <span className="text-xs opacity-70 group-hover:text-accent transition-colors">
+              Website made by
+            </span>
+            <img
+              src="/zynkro_logo.png"
+              alt="ZynkroSystems logo"
+              className="h-5 w-5 object-contain"
+            />
+            <span className="text-xs font-semibold group-hover:text-accent transition-colors">
+              ZynkroSystems
+            </span>
+          </a>
         </div>
       </div>
     </footer>
