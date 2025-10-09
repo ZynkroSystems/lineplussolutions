@@ -77,7 +77,7 @@ const ContactForm = () => {
               <FormItem>
                 <FormLabel>Full Name *</FormLabel>
                 <FormControl>
-                  <Input placeholder="John Smith" {...field} />
+                  <Input placeholder="John Smith" className="h-12" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -91,7 +91,7 @@ const ContactForm = () => {
               <FormItem>
                 <FormLabel>Company/Bakery Name *</FormLabel>
                 <FormControl>
-                  <Input placeholder="Your Bakery Ltd" {...field} />
+                  <Input placeholder="Your Bakery Ltd" className="h-12" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -107,7 +107,7 @@ const ContactForm = () => {
               <FormItem>
                 <FormLabel>Email Address *</FormLabel>
                 <FormControl>
-                  <Input type="email" placeholder="john@bakery.com" {...field} />
+                  <Input type="email" placeholder="john@bakery.com" className="h-12" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -121,7 +121,7 @@ const ContactForm = () => {
               <FormItem>
                 <FormLabel>Phone Number (Optional)</FormLabel>
                 <FormControl>
-                  <Input type="tel" placeholder="+44 20 1234 5678" {...field} />
+                  <Input type="tel" placeholder="+44 20 1234 5678" className="h-12" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -137,11 +137,11 @@ const ContactForm = () => {
               <FormLabel>Service Needed *</FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
-                  <SelectTrigger>
+                  <SelectTrigger className="h-12">
                     <SelectValue placeholder="Select a service" />
                   </SelectTrigger>
                 </FormControl>
-                <SelectContent>
+                <SelectContent className="bg-card z-50">
                   <SelectItem value="breakdown">Breakdown Repair</SelectItem>
                   <SelectItem value="ppm">PPM Setup</SelectItem>
                   <SelectItem value="audit">Audit Support</SelectItem>
@@ -164,6 +164,7 @@ const ContactForm = () => {
                 <Textarea
                   placeholder="Please describe your needs or questions..."
                   rows={6}
+                  className="min-h-[120px]"
                   {...field}
                 />
               </FormControl>
@@ -172,7 +173,7 @@ const ContactForm = () => {
           )}
         />
 
-        <Button type="submit" size="lg" disabled={isSubmitting} className="w-full md:w-auto">
+        <Button type="submit" size="lg" disabled={isSubmitting} className="w-full md:w-auto h-12">
           {isSubmitting ? "Sending..." : "Send Inquiry"}
         </Button>
       </form>

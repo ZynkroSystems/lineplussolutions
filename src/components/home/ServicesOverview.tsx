@@ -7,7 +7,7 @@ const services = [
   {
     icon: Wrench,
     title: "Breakdown & Repair",
-    description: "Fast fault diagnosis and on-site repairs. We replace bearings, belts, seals, and pneumatic components to get your line running again — quickly and correctly.",
+    description: "Fast fault diagnosis and on-site repairs. We replace bearings, belts, seals, and pneumatic components to get your line running again - quickly and correctly.",
     link: "/services#breakdown"
   },
   {

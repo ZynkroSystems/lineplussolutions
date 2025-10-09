@@ -32,8 +32,8 @@ const AboutPreview = () => {
               </p>
               
               <p>
-                We specialize in the machinery that produces pita bread, naan, Arabic
-                flatbread, and tortillas: tunnel ovens, dough dividers, cooling
+                We specialize in the machinery that produces pita bread, naan, and Arabic
+                flatbread: tunnel ovens, dough dividers, cooling
                 conveyors, metal detectors, proofers, and packaging lines.
               </p>
               

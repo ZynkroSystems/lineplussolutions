@@ -12,7 +12,7 @@ const HeroSection = () => {
           {/* Content */}
           <div className="space-y-6 md:space-y-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              Keeping Bakery Production Lines Running —{" "}
+              Keeping Bakery Production Lines Running -{" "}
               <span className="text-secondary">Reliably, Every Day</span>
             </h1>
             

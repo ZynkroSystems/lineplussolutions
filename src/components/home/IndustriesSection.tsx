@@ -4,7 +4,6 @@ const industries = [
   "Pita bread production",
   "Naan manufacturing",
   "Arabic pita and flatbread lines",
-  "Tortilla production",
   "Similar baked products requiring high-volume machinery"
 ];
 

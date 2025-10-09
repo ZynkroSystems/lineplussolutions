@@ -19,8 +19,8 @@ const About = () => {
         {/* Hero */}
         <section className="pt-32 pb-16 md:pb-24 bg-gradient-to-b from-primary to-primary/90 text-primary-foreground">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              18 Years on the Factory Floor —{" "}
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              18 Years on the Factory Floor -{" "}
               <span className="text-accent">Not Behind a Desk</span>
             </h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto opacity-90">
@@ -36,14 +36,14 @@ const About = () => {
               <div className="space-y-6 text-lg">
                 <p>
                   Lineplus Solutions Ltd was founded on a simple principle: bakery machinery
-                  needs engineers who truly understand how production lines work — not just
+                  needs engineers who truly understand how production lines work - not just
                   in theory, but through years of hands-on experience.
                 </p>
 
                 <p>
                   For over 18 years, I've worked inside bakery production facilities
-                  maintaining the equipment that produces pita bread, naan, Arabic flatbread,
-                  and tortillas. I've diagnosed thousands of breakdowns, optimized hundreds
+                  maintaining the equipment that produces pita bread, naan, and Arabic flatbread.
+                  I've diagnosed thousands of breakdowns, optimized hundreds
                   of maintenance schedules, and helped bakery teams prepare for countless
                   audits.
                 </p>
@@ -51,7 +51,7 @@ const About = () => {
                 <h2 className="text-2xl font-bold text-secondary pt-4">What I've Learned</h2>
 
                 <p>
-                  Every production line has its weak points — the bearings that fail first,
+                  Every production line has its weak points - the bearings that fail first,
                   the belts that slip under load, the sensors that drift out of calibration.
                   Effective maintenance isn't about fixing things when they break. It's about
                   understanding where failures happen and building systems that prevent them.
