@@ -1,12 +1,12 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { CheckCircle } from "lucide-react";
-import engineerImage from "@/assets/engineer-inspection.jpg";
+import engineerImage from "@/assets/mechanic_fixing_motor.png";
 
 const About = () => {
   const highlights = [
     "18+ years mechanical engineering in bakery production",
-    "Specialist knowledge: pita, naan, flatbread machinery",
+    "Specialist knowledge: pitta, naan, flatbread machinery",
     "BRC, HACCP, ISO documentation expertise",
     "Emergency breakdown response experience",
     "PPM program development and implementation"
@@ -20,11 +20,11 @@ const About = () => {
         <section className="pt-32 pb-16 md:pb-24 bg-gradient-to-b from-primary to-primary/90 text-primary-foreground">
           <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              18 Years on the Factory Floor -{" "}
+              18 Years on the Factory Floor {" "}
               <span className="text-accent">Not Behind a Desk</span>
             </h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto opacity-90">
-              Real experience maintaining the equipment that produces pita, naan, and flatbread
+              Real experience maintaining the equipment that produces pitta, naan, and flatbread
             </p>
           </div>
         </section>
@@ -42,7 +42,7 @@ const About = () => {
 
                 <p>
                   For over 18 years, I've worked inside bakery production facilities
-                  maintaining the equipment that produces pita bread, naan, and Arabic flatbread.
+                  maintaining the equipment that produces pitta bread, naan, and Arabic flatbread.
                   I've diagnosed thousands of breakdowns, optimized hundreds
                   of maintenance schedules, and helped bakery teams prepare for countless
                   audits.

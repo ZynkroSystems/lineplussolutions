@@ -101,7 +101,7 @@ const Resources = () => {
             <p className="text-lg">
               Every template and tool in this collection has been developed through years
               of hands-on work maintaining industrial bakery equipment. These aren't
-              generic checklists - they're proven systems designed specifically for pita,
+              generic checklists - they're proven systems designed specifically for pitta,
               naan, and flatbread production lines.
             </p>
 

@@ -3,7 +3,8 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Wrench, Calendar, ClipboardCheck, Users, CheckCircle } from "lucide-react";
-import maintenanceImage from "@/assets/maintenance-closeup.jpg";
+import maintenanceImage from "@/assets/broken_bearing.png";
+import ppmImage from "@/assets/proper_bearing.png";
 
 const Services = () => {
   return (
@@ -92,7 +93,7 @@ const Services = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="rounded-lg overflow-hidden shadow-xl order-2 lg:order-1">
                 <img
-                  src={maintenanceImage}
+                  src={ppmImage}
                   alt="Preventive maintenance program"
                   className="w-full h-auto object-cover"
                 />

@@ -1,9 +1,9 @@
 import { MapPin, CheckCircle } from "lucide-react";
 
 const industries = [
-  "Pita bread production",
+  "Pitta bread production",
   "Naan manufacturing",
-  "Arabic pita and flatbread lines",
+  "Arabic pitta and flatbread lines",
   "Similar baked products requiring high-volume machinery"
 ];
 

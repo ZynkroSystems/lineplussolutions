@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Clock, Shield, Wrench } from "lucide-react";
-import heroImage from "@/assets/hero-bakery-line.jpg";
+import heroImage from "@/assets/hero_pitta_oven.png";
 
 const HeroSection = () => {
   return (
@@ -12,18 +12,18 @@ const HeroSection = () => {
           {/* Content */}
           <div className="space-y-6 md:space-y-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              Keeping Bakery Production Lines Running -{" "}
-              <span className="text-secondary">Reliably, Every Day</span>
+              Keeping bakery production lines running {" "}
+              <span className="text-secondary">reliably, every day</span>
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground">
-              18+ years of specialist mechanical engineering for pita, naan, and
+              18+ years of specialist mechanical engineering for pitta, naan, and
               flatbread manufacturers across the UK
             </p>
             
             <p className="text-base md:text-lg">
               From emergency breakdowns to preventive maintenance programs, we help
-              industrial bakeries minimize downtime, maintain compliance, and extend
+              industrial bakeries minimise downtime, maintain compliance, and extend
               equipment life.
             </p>
 

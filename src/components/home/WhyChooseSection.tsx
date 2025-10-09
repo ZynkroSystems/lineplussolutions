@@ -4,7 +4,7 @@ const benefits = [
   {
     icon: Award,
     title: "Deep Specialist Knowledge",
-    description: "18+ years working exclusively with pita, naan, and flatbread production equipment"
+    description: "18+ years working exclusively with pitta, naan, and flatbread production equipment"
   },
   {
     icon: FileCheck,

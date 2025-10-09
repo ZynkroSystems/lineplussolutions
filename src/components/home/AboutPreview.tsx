@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import engineerImage from "@/assets/engineer-inspection.jpg";
+import engineerImage from "@/assets/mechanic_fixing_motor.png";
 
 const AboutPreview = () => {
   return (
@@ -27,12 +27,12 @@ const AboutPreview = () => {
             <div className="space-y-4 text-base md:text-lg">
               <p>
                 Lineplus Solutions Ltd is led by a mechanical engineer who has spent
-                nearly two decades inside bakery production facilities — not behind a
+                nearly two decades inside bakery production facilities not behind a
                 desk, but on the factory floor.
               </p>
               
               <p>
-                We specialize in the machinery that produces pita bread, naan, and Arabic
+                We specialise in the machinery that produces pitta bread, naan, and Arabic
                 flatbread: tunnel ovens, dough dividers, cooling
                 conveyors, metal detectors, proofers, and packaging lines.
               </p>
