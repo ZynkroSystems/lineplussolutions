@@ -25,7 +25,7 @@ const Services = () => {
         </section>
 
         {/* Service 1: Breakdown Repair */}
-        <section id="breakdown" className="py-16 md:py-24">
+        <section id="breakdown" className="py-12 md:py-16">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
@@ -88,7 +88,7 @@ const Services = () => {
         </section>
 
         {/* Service 2: PPM */}
-        <section id="ppm" className="py-16 md:py-24 bg-muted/30">
+        <section id="ppm" className="py-12 md:py-16 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="rounded-lg overflow-hidden shadow-xl order-2 lg:order-1">
@@ -146,7 +146,7 @@ const Services = () => {
         </section>
 
         {/* Service 3: Audit Support */}
-        <section id="audit" className="py-16 md:py-24">
+        <section id="audit" className="py-12 md:py-16">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
@@ -216,7 +216,7 @@ const Services = () => {
         </section>
 
         {/* Service 4: Consultancy */}
-        <section className="py-16 md:py-24 bg-muted/30">
+        <section className="py-12 md:py-16 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center space-y-6">
               <div className="inline-flex p-4 rounded-lg bg-secondary/10">
@@ -258,7 +258,7 @@ const Services = () => {
         </section>
 
         {/* CTA */}
-        <section className="py-16 md:py-24">
+        <section className="py-12 md:py-16">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Ready to Improve Your Maintenance Program?

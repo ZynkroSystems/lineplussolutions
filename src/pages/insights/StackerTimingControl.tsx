@@ -43,7 +43,7 @@ const StackerTimingControl = () => {
           </div>
         </section>
 
-        <article className="py-16 md:py-24">
+        <article className="py-12 md:py-16">
           <div className="container mx-auto px-4 max-w-3xl space-y-8">
             <p>
               Automated stackers keep output consistent on high-volume pitta lines. When

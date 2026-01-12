@@ -45,7 +45,7 @@ const QuickContactCard = () => {
         </a>
       </div>
 
-      <div className="mt-3 flex flex-col gap-2 text-sm">
+      <div className="mt-3 flex flex-col gap-2 text-sm sm:flex-row sm:items-center sm:gap-6">
         <a
           href={emergencyTel}
           className="inline-flex items-center gap-2 text-foreground hover:text-secondary"
@@ -63,8 +63,10 @@ const QuickContactCard = () => {
       </div>
 
       <form onSubmit={handleSubmit} className="mt-4 space-y-2.5">
-        <Input name="fullName" placeholder="Full name" required className="h-10" />
-        <Input name="phone" placeholder="Phone number" required className="h-10" />
+        <div className="grid gap-2.5 sm:grid-cols-2">
+          <Input name="fullName" placeholder="Full name" required className="h-10" />
+          <Input name="phone" placeholder="Phone number" required className="h-10" />
+        </div>
         <Textarea name="message" placeholder="How can we help?" rows={2} required />
         <Button type="submit" className="w-full" disabled={isSubmitting}>
           {isSubmitting ? "Sending..." : "Request a Call Back"}

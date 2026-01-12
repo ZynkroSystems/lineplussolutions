@@ -125,7 +125,7 @@ const Resources = () => {
         </section>
 
         {/* Products */}
-        <section className="py-16 md:py-24">
+        <section className="py-12 md:py-16">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-8 mb-16">
               {resources.map((resource, index) => (

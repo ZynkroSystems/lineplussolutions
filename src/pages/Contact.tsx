@@ -23,7 +23,7 @@ const Contact = () => {
         </section>
 
         {/* Contact Section */}
-        <section className="py-16 md:py-24">
+        <section className="py-12 md:py-16">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12">
               {/* Contact Info */}
@@ -128,7 +128,7 @@ const Contact = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-24 bg-muted/30">
+        <section className="py-12 md:py-16 bg-muted/30">
           <div className="container mx-auto px-4 text-center max-w-3xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Not Ready to Reach Out Yet?
