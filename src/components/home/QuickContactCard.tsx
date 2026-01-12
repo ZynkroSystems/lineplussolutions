@@ -8,23 +8,47 @@ import { Textarea } from "@/components/ui/textarea";
 const QuickContactCard = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const emergencyPhone = "+44 (0) 1234 567 890";
-  const emergencyTel = "tel:+441234567890";
+  const emergencyPhone = "+44 7725 041 270";
+  const emergencyTel = "tel:+447725041270";
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setIsSubmitting(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 800));
-
-    toast({
-      title: "Thanks — we received your request",
-      description: "We will respond quickly to confirm next steps.",
-    });
-
     const form = event.currentTarget;
-    form.reset();
-    setIsSubmitting(false);
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("/api/send-contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          fullName: formData.get("fullName"),
+          phone: formData.get("phone"),
+          message: formData.get("message"),
+          source: "Quick Contact Card",
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send");
+      }
+
+      toast({
+        title: "Thanks — we received your request",
+        description: "We will respond quickly to confirm next steps.",
+      });
+
+      form.reset();
+    } catch (error) {
+      toast({
+        title: "Request not sent",
+        description: "Please call or email us if this keeps happening.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

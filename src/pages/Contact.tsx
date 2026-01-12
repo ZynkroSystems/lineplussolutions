@@ -62,10 +62,10 @@ const Contact = () => {
                     <div>
                       <div className="font-semibold text-lg mb-1">Phone</div>
                       <a
-                        href="tel:+441234567890"
+                        href="tel:+447725041270"
                         className="text-muted-foreground hover:text-secondary transition-colors text-lg"
                       >
-                        +44 (0) 1234 567 890
+                        +44 7725 041 270
                       </a>
                       <p className="text-sm text-muted-foreground mt-1">
                         For urgent breakdown support and emergency callouts

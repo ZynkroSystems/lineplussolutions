@@ -52,18 +52,35 @@ const ContactForm = () => {
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    
-    console.log("Form submitted:", data);
-    
-    toast({
-      title: "Message Sent Successfully",
-      description: "We'll respond to your inquiry within 24 hours.",
-    });
-    
-    form.reset();
-    setIsSubmitting(false);
+    try {
+      const response = await fetch("/api/send-contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...data,
+          source: "Main Contact Form",
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send");
+      }
+
+      toast({
+        title: "Message Sent Successfully",
+        description: "We'll respond to your inquiry within 24 hours.",
+      });
+
+      form.reset();
+    } catch (error) {
+      toast({
+        title: "Message not sent",
+        description: "Please call or email us if this keeps happening.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

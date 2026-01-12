@@ -41,10 +41,10 @@ const ContactSection = () => {
                 <div>
                   <div className="font-semibold mb-1">Phone</div>
                   <a
-                    href="tel:+441234567890"
+                    href="tel:+447725041270"
                     className="text-muted-foreground hover:text-secondary transition-colors"
                   >
-                    +44 (0) 1234 567 890
+                    +44 7725 041 270
                   </a>
                 </div>
               </div>

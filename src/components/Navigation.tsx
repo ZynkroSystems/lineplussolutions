@@ -7,8 +7,8 @@ const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
-  const emergencyPhone = "+44 (0) 1234 567 890";
-  const emergencyTel = "tel:+441234567890";
+  const emergencyPhone = "+44 7725 041 270";
+  const emergencyTel = "tel:+447725041270";
 
   useEffect(() => {
     const handleScroll = () => {
