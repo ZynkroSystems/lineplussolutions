@@ -15,9 +15,7 @@ const Footer = () => {
             <p className="text-sm opacity-90 mb-2">
               Specialist mechanical engineering for industrial bakeries
             </p>
-            <p className="text-sm opacity-90">
-              Company No: [Registration Number]
-            </p>
+            <p className="text-sm opacity-90">Company No: 09222739</p>
           </div>
 
           {/* Quick Links */}

@@ -1,0 +1,239 @@
+{% comment %}
+  30-Day Satisfaction Guarantee Section
+  Save this as snippets/guarantee-section.liquid
+  Then include it with: {% render 'guarantee-section' %}
+{% endcomment %}
+
+<style>
+  .guarantee-wrap{
+    background:#f9f9f9;
+    padding:0 20px;
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;
+  }
+  .guarantee-container{
+    max-width:1200px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:1fr 2fr 1fr;
+    gap:30px;
+    align-items:center;
+    padding:40px 0;
+  }
+  
+  /* Side images */
+  .guarantee-img{
+    position:relative;
+  }
+  .guarantee-img img{
+    width:100%;
+    max-width:280px;
+    height:auto;
+    border-radius:12px;
+    box-shadow:0 8px 24px rgba(0,0,0,.12);
+    transform:rotate(-5deg);
+    transition:transform .3s ease;
+  }
+  .guarantee-img.right img{
+    transform:rotate(5deg);
+  }
+  .guarantee-img:hover img{
+    transform:rotate(0deg);
+  }
+  
+  /* Center content */
+  .guarantee-content{
+    text-align:center;
+    padding:10px;
+  }
+  .guarantee-shield{
+    width:40px;
+    height:40px;
+    margin:0 auto 15px;
+  }
+  .guarantee-shield svg{
+    width:100%;
+    height:100%;
+    fill:#1a1a1a;
+  }
+  .guarantee-title{
+    font-size:clamp(24px,4vw,36px);
+    line-height:1.2;
+    margin:0 0 15px;
+    font-weight:400;
+  }
+  .guarantee-title .highlight{
+    color:#d4145a;
+    font-style:italic;
+    font-weight:500;
+  }
+  .guarantee-title .bold{
+    color:#000;
+    font-weight:700;
+  }
+  .guarantee-text{
+    font-size:15px;
+    line-height:1.5;
+    color:#333;
+    margin:0 0 20px;
+    max-width:580px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .guarantee-text .emoji{
+    display:inline-block;
+    margin-right:6px;
+  }
+  
+  /* CTA Button */
+  .guarantee-btn{
+    display:inline-block;
+    background:#0f2847;
+    color:#fff;
+    padding:16px 40px;
+    border-radius:50px;
+    font-size:17px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    text-decoration:none;
+    transition:all .3s ease;
+    margin-bottom:20px;
+    width:100%;
+    max-width:580px;
+  }
+  .guarantee-btn:hover{
+    background:#1a3a5f;
+    transform:translateY(-2px);
+    box-shadow:0 6px 20px rgba(15,40,71,.3);
+  }
+  
+  /* Trust badges */
+  .guarantee-badges{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    flex-wrap:nowrap;
+    font-size:14px;
+    color:#333;
+  }
+  .guarantee-badge{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    white-space:nowrap;
+  }
+  .guarantee-badge::before{
+    content:"✓";
+    color:#3BB273;
+    font-weight:700;
+    font-size:16px;
+  }
+  
+  @media (max-width:1024px){
+    .guarantee-container{
+      grid-template-columns:1fr;
+      gap:25px;
+    }
+    .guarantee-img{
+      display:none;
+    }
+    .guarantee-content{
+      padding:15px 0;
+    }
+  }
+  
+  @media (max-width:640px){
+    .guarantee-wrap{
+      padding:0 15px;
+    }
+    .guarantee-container{
+      padding:30px 0;
+    }
+    .guarantee-title{
+      font-size:22px;
+      margin-bottom:12px;
+    }
+    .guarantee-text{
+      font-size:14px;
+      margin-bottom:18px;
+    }
+    .guarantee-btn{
+      padding:14px 50px;
+      font-size:15px;
+      width:100%;
+      max-width:100%;
+    }
+    .guarantee-badges{
+      flex-direction:column;
+      gap:10px;
+      font-size:13px;
+    }
+    .guarantee-badge{
+      width:100%;
+      justify-content:center;
+    }
+  }
+  
+  @media (min-width:641px) and (max-width:900px){
+    .guarantee-badges{
+      gap:15px;
+      font-size:13px;
+    }
+  }
+</style>
+
+<div class="guarantee-wrap">
+  <div class="guarantee-container">
+    
+    <!-- Left Images -->
+    <div class="guarantee-img left">
+      <img src="YOUR-LEFT-TOP-IMAGE.jpg" alt="HappySocks product" style="margin-bottom:20px;">
+      <img src="YOUR-LEFT-BOTTOM-IMAGE.jpg" alt="HappySocks lifestyle">
+    </div>
+    
+    <!-- Center Content -->
+    <div class="guarantee-content">
+      <div class="guarantee-shield">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 2l7 3v6c0 5.3-3.7 9.8-7 11-3.3-1.2-7-5.7-7-11V5l7-3zm-1 13.2l5.3-5.3-1.4-1.4L11 12.6 9.1 10.7 7.7 12.1 11 15.2z"/>
+        </svg>
+      </div>
+      
+      <h2 class="guarantee-title">
+        <span class="highlight">30-Day Satisfaction</span> <span class="bold">Guarantee</span>
+      </h2>
+      
+      <p class="guarantee-text">
+        <span class="emoji">✨</span> If your feet still feel sore, tight or tired after using our foot-adjusting socks, we'll give you your money back. With our 30-day satisfaction guarantee, you can try it without any stress or worry - your feet deserve comfort!
+      </p>
+      
+      <a href="#hs-scroll-to-form" class="guarantee-btn">Buy Now</a>
+      
+      <div class="guarantee-badges">
+        <span class="guarantee-badge">100% Satisfaction Guarantee</span>
+        <span class="guarantee-badge">Fast Shipping</span>
+        <span class="guarantee-badge">Easy Returns</span>
+      </div>
+    </div>
+    
+    <!-- Right Image -->
+    <div class="guarantee-img right">
+      <img src="YOUR-RIGHT-IMAGE.jpg" alt="HappySocks on foot">
+    </div>
+    
+  </div>
+</div>
+
+<script>
+  // Smooth scroll to product form
+  document.querySelectorAll('.guarantee-btn').forEach(btn=>{
+    btn.addEventListener('click', e=>{
+      const target = document.querySelector('form[action*="/cart/add"], .product-form, [name="add"]');
+      if(target){ 
+        e.preventDefault(); 
+        target.scrollIntoView({behavior:'smooth', block:'start'}); 
+      }
+    });
+  });
+</script>

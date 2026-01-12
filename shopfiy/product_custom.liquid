@@ -1,0 +1,202 @@
+{% comment %}
+  Why You Should Try Section - Exact Copy
+  Save this as snippets/why-try-section.liquid
+  Then include it with: {% render 'why-try-section' %}
+{% endcomment %}
+
+<style>
+  .wt-wrap{
+    background:#fff;
+    padding:60px 20px;
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;
+  }
+  
+  .wt-container{
+    max-width:1400px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    align-items:center;
+  }
+  
+  /* Left Content */
+  .wt-content{
+    padding:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  
+  .wt-title{
+    font-size:clamp(28px,4vw,42px);
+    font-weight:400;
+    margin-bottom:35px;
+    line-height:1.2;
+    color:#000;
+    white-space:nowrap;
+    text-align:center;
+  }
+  
+  .wt-title .highlight{
+    color:#0f2847;
+    font-weight:400;
+  }
+  
+  /* Benefits Box */
+  .wt-benefits{
+    background:linear-gradient(90deg,#6b5dd3 0%,#4a4894 35%,#2d3670 70%,#1a2b54 100%);
+    border-radius:24px;
+    padding:28px 26px;
+    color:#fff;
+    max-width:420px;
+    width:100%;
+    box-shadow:0 8px 24px rgba(42,48,96,0.15);
+  }
+  
+  .wt-benefit{
+    margin-bottom:22px;
+  }
+  
+  .wt-benefit:last-child{
+    margin-bottom:0;
+  }
+  
+  .wt-benefit-header{
+    display:flex;
+    align-items:center;
+    gap:0;
+    margin-bottom:5px;
+  }
+  
+  .wt-benefit-icon{
+    display:none;
+  }
+  
+  .wt-benefit-title{
+    font-size:16px;
+    font-weight:400;
+    line-height:1.3;
+  }
+  
+  .wt-benefit-desc{
+    font-size:14px;
+    font-weight:300;
+    opacity:0.95;
+    line-height:1.5;
+    padding-left:0;
+  }
+  
+  /* Right Image */
+  .wt-image{
+    position:relative;
+  }
+  
+  .wt-image img{
+    width:100%;
+    height:auto;
+    border-radius:0;
+  }
+  
+  @media (max-width:968px){
+    .wt-container{
+      grid-template-columns:1fr;
+      gap:50px;
+    }
+    
+    .wt-benefits{
+      max-width:100%;
+      padding:32px 28px;
+    }
+    
+    .wt-benefit{
+      margin-bottom:20px;
+    }
+  }
+  
+  @media (max-width:640px){
+    .wt-wrap{
+      padding:40px 15px;
+    }
+    
+    .wt-title{
+      font-size:28px;
+      margin-bottom:30px;
+    }
+    
+    .wt-benefits{
+      padding:28px 24px;
+      border-radius:20px;
+    }
+    
+    .wt-benefit{
+      margin-bottom:18px;
+    }
+    
+    .wt-benefit-title{
+      font-size:16px;
+    }
+    
+    .wt-benefit-desc{
+      font-size:13px;
+    }
+  }
+</style>
+
+<div class="wt-wrap">
+  <div class="wt-container">
+    <!-- Left Content -->
+    <div class="wt-content">
+      <h2 class="wt-title">
+        Why you should try <span class="highlight">HappySocks!</span>
+      </h2>
+      
+      <div class="wt-benefits">
+        <div class="wt-benefit">
+          <div class="wt-benefit-header">
+            <span class="wt-benefit-icon">✓</span>
+            <div class="wt-benefit-title">Quick Relief</div>
+          </div>
+          <div class="wt-benefit-desc">
+            💡Provides quick relief from sore and tired feet.
+          </div>
+        </div>
+        
+        <div class="wt-benefit">
+          <div class="wt-benefit-header">
+            <span class="wt-benefit-icon">🕐</span>
+            <div class="wt-benefit-title">Prevents damage</div>
+          </div>
+          <div class="wt-benefit-desc">
+            ✨Prevents hallux valgus, hammertoes and plantar fasciitis.
+          </div>
+        </div>
+        
+        <div class="wt-benefit">
+          <div class="wt-benefit-header">
+            <span class="wt-benefit-icon">⭐</span>
+            <div class="wt-benefit-title">Improved blood circulation</div>
+          </div>
+          <div class="wt-benefit-desc">
+            💙Improves blood circulation and reduces swelling
+          </div>
+        </div>
+        
+        <div class="wt-benefit">
+          <div class="wt-benefit-header">
+            <span class="wt-benefit-icon">❤️</span>
+            <div class="wt-benefit-title">Comfortable everywhere!</div>
+          </div>
+          <div class="wt-benefit-desc">
+            ❤️Comfortable to wear – perfect at home or during the night🌙
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Right Image -->
+    <div class="wt-image">
+      <img src="YOUR-IMAGE-URL.jpg" alt="HappySocks product showcase">
+    </div>
+  </div>
+</div>

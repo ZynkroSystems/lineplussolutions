@@ -4,7 +4,7 @@ const benefits = [
   {
     icon: Award,
     title: "Deep Specialist Knowledge",
-    description: "18+ years working exclusively with pitta, naan, and flatbread production equipment"
+    description: "20+ years working exclusively with pitta, naan, and flatbread production equipment"
   },
   {
     icon: FileCheck,
@@ -13,8 +13,8 @@ const benefits = [
   },
   {
     icon: ShieldCheck,
-    title: "Preventive Focus",
-    description: "Structured programs designed to catch problems before they cause production stoppages"
+    title: "Mechanical-Only Focus",
+    description: "Dedicated mechanical expertise for pitta and Arabic bread lines, no electrical work"
   },
   {
     icon: Zap,

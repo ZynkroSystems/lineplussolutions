@@ -1,0 +1,179 @@
+{% comment %}
+  Customer Review Section - Exact Copy
+  Save this as snippets/customer-review.liquid
+  Then include it with: {% render 'customer-review' %}
+{% endcomment %}
+
+<style>
+  .review-wrap{
+    background:transparent;
+    padding:30px 20px;
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;
+  }
+  
+  .review-container{
+    max-width:100%;
+    margin:0 auto;
+  }
+  
+  .review-card{
+    background:#fff;
+    border:1px solid #e0e0e0;
+    border-radius:12px;
+    padding:16px 24px;
+    display:flex;
+    align-items:center;
+    gap:18px;
+    max-width:900px;
+  }
+  
+  /* Avatar */
+  .review-avatar{
+    flex-shrink:0;
+  }
+  
+  .review-avatar img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    object-fit:cover;
+  }
+  
+  /* Content */
+  .review-content{
+    flex:1;
+  }
+  
+  .review-header{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin-bottom:6px;
+  }
+  
+  .review-name{
+    font-size:14px;
+    font-weight:500;
+    color:#333;
+  }
+  
+  .review-verified{
+    width:15px;
+    height:15px;
+    background:#4caf50;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:9px;
+  }
+  
+  .review-stars{
+    display:flex;
+    gap:2px;
+  }
+  
+  .review-star{
+    color:#ffc107;
+    font-size:13px;
+  }
+  
+  .review-text{
+    font-size:12px;
+    line-height:1.4;
+    color:#666;
+    font-weight:300;
+    margin-top:4px;
+  }
+  
+  @media (max-width:768px){
+    .review-card{
+      flex-direction:row;
+      padding:18px 20px;
+      gap:15px;
+    }
+    
+    .review-avatar img{
+      width:50px;
+      height:50px;
+    }
+    
+    .review-name{
+      font-size:16px;
+    }
+    
+    .review-star{
+      font-size:14px;
+    }
+    
+    .review-text{
+      font-size:13px;
+    }
+  }
+  
+  @media (max-width:480px){
+    .review-wrap{
+      padding:20px 15px;
+    }
+    
+    .review-card{
+      padding:16px 18px;
+    }
+    
+    .review-avatar img{
+      width:45px;
+      height:45px;
+    }
+    
+    .review-name{
+      font-size:15px;
+    }
+    
+    .review-verified{
+      width:16px;
+      height:16px;
+      font-size:10px;
+    }
+    
+    .review-star{
+      font-size:13px;
+    }
+    
+    .review-text{
+      font-size:12px;
+    }
+  }
+</style>
+
+<div class="review-wrap">
+  <div class="review-container">
+    <div class="review-card">
+      <!-- Avatar -->
+      <div class="review-avatar">
+        <img src="YOUR-AVATAR-IMAGE.jpg" alt="Jessica">
+      </div>
+      
+      <!-- Content -->
+      <div class="review-content">
+        <!-- Name, Verified Badge and Stars in one line -->
+        <div class="review-header">
+          <h3 class="review-name">Maria</h3>
+          <span class="review-verified">✓</span>
+          <div class="review-stars">
+            <span class="review-star">★</span>
+            <span class="review-star">★</span>
+            <span class="review-star">★</span>
+            <span class="review-star">★</span>
+            <span class="review-star">★</span>
+          </div>
+        </div>
+        
+        <!-- Review Text -->
+        <p class="review-text">
+          After I started using these foot socks, I quickly noticed a change. The pain has almost completely disappeared and I can finally walk and stand for longer without feeling discomfort!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

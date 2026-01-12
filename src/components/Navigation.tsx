@@ -7,6 +7,8 @@ const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const emergencyPhone = "+44 (0) 1234 567 890";
+  const emergencyTel = "tel:+441234567890";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,6 +23,7 @@ const Navigation = () => {
     { name: "About", path: "/about" },
     { name: "Services", path: "/services" },
     { name: "Resources", path: "/resources" },
+    { name: "Insights", path: "/insights" },
     { name: "Contact", path: "/contact" },
   ];
 
@@ -30,6 +33,24 @@ const Navigation = () => {
         isScrolled ? "bg-card/95 backdrop-blur-sm shadow-md" : "bg-card shadow-sm"
       }`}
     >
+      <div className="bg-secondary text-secondary-foreground">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col gap-2 py-2 text-xs sm:flex-row sm:items-center sm:justify-between sm:text-sm">
+            <div className="font-semibold text-center sm:text-left">
+              Emergency Breakdown? Rapid response available.
+            </div>
+            <div className="flex items-center justify-center gap-3 sm:justify-end">
+              <span className="hidden sm:inline">Call now for urgent support</span>
+              <a
+                href={emergencyTel}
+                className="inline-flex items-center justify-center rounded-md border border-secondary-foreground/30 px-3 py-1.5 text-xs font-semibold uppercase tracking-wide transition-colors hover:bg-secondary-foreground/10 sm:text-sm"
+              >
+                Call {emergencyPhone}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
@@ -41,7 +62,7 @@ const Navigation = () => {
               loading="lazy"
             />
             <div className="font-heading font-bold text-xl md:text-2xl text-primary">
-              Lineplus <span className="text-secondary">Solutions</span>
+              Lineplus<span className="text-secondary">Solution</span>
             </div>
           </Link>
 

@@ -5,7 +5,7 @@ import engineerImage from "@/assets/mechanic_fixing_motor.png";
 
 const About = () => {
   const highlights = [
-    "18+ years mechanical engineering in bakery production",
+    "20+ years mechanical engineering in bakery production",
     "Specialist knowledge: pitta, naan, flatbread machinery",
     "BRC, HACCP, ISO documentation expertise",
     "Emergency breakdown response experience",
@@ -17,10 +17,10 @@ const About = () => {
       <Navigation />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-16 md:pb-24 bg-gradient-to-b from-primary to-primary/90 text-primary-foreground">
+        <section className="pt-16 md:pt-20 pb-10 md:pb-12 bg-gradient-to-b from-primary to-primary/90 text-primary-foreground">
           <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              18 Years on the Factory Floor {" "}
+              20+ Years on the Factory Floor {" "}
               <span className="text-accent">Not Behind a Desk</span>
             </h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto opacity-90">
@@ -41,7 +41,7 @@ const About = () => {
                 </p>
 
                 <p>
-                  For over 18 years, I've worked inside bakery production facilities
+                  For over 20+ years, I've worked inside bakery production facilities
                   maintaining the equipment that produces pitta bread, naan, and Arabic flatbread.
                   I've diagnosed thousands of breakdowns, optimized hundreds
                   of maintenance schedules, and helped bakery teams prepare for countless

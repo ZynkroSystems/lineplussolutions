@@ -1,15 +1,15 @@
 import { Cpu, Flame, Wind, CircleDot, ScanLine, Layers, Settings, Database, Package } from "lucide-react";
 
 const equipment = [
-  { icon: CircleDot, name: "Dough Dividers & Rounders" },
-  { icon: Flame, name: "Tunnel Ovens" },
+  { icon: Flame, name: "High-Heat Pitta Tunnel Ovens" },
+  { icon: Layers, name: "Spiral Provers & Resting Systems" },
   { icon: Wind, name: "Cooling Conveyors" },
-  { icon: Layers, name: "Proofers & Resting Systems" },
-  { icon: ScanLine, name: "Metal Detectors" },
+  { icon: Package, name: "Automated Stacking Systems" },
+  { icon: CircleDot, name: "Dough Dividers & Rounders" },
   { icon: Cpu, name: "Sorting & Inspection Tables" },
+  { icon: ScanLine, name: "Metal Detectors" },
   { icon: Settings, name: "Industrial Mixers" },
-  { icon: Database, name: "Air Compressors & Pneumatic Systems" },
-  { icon: Package, name: "Packaging Conveyors" }
+  { icon: Database, name: "Air Compressors & Pneumatic Systems" }
 ];
 
 const EquipmentSection = () => {
@@ -18,11 +18,12 @@ const EquipmentSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Specialised in <span className="text-secondary">Flatbread & Pitta</span>{" "}
-            Production Machinery
+            Flatbread Machinery Specialist for{" "}
+            <span className="text-secondary">Pitta & Arabic Bread</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            We maintain the equipment that matters most to your production line
+            Mechanical-only support for tunnel ovens, provers, conveyors, and stackers
+            in high-volume pitta and Arabic bread lines.
           </p>
         </div>
 

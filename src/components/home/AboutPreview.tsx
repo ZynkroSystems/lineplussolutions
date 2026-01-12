@@ -12,7 +12,7 @@ const AboutPreview = () => {
             <div className="relative rounded-lg overflow-hidden shadow-xl">
               <img
                 src={engineerImage}
-                alt="Engineer inspecting bakery machinery with clipboard"
+                alt="Mechanical engineer inspecting industrial pitta line equipment"
                 className="w-full h-auto object-cover"
               />
             </div>
@@ -26,15 +26,15 @@ const AboutPreview = () => {
             
             <div className="space-y-4 text-base md:text-lg">
               <p>
-                Lineplus Solutions Ltd is led by a mechanical engineer who has spent
-                nearly two decades inside bakery production facilities not behind a
+                Lineplus Solutions Ltd is led by a mechanical engineer with 20+ years
+                inside pitta, naan, and Arabic bread production facilities not behind a
                 desk, but on the factory floor.
               </p>
               
               <p>
-                We specialise in the machinery that produces pitta bread, naan, and Arabic
-                flatbread: tunnel ovens, dough dividers, cooling
-                conveyors, metal detectors, proofers, and packaging lines.
+                We are a flatbread machinery specialist for the equipment that produces
+                pitta bread, naan, and Arabic flatbread: tunnel ovens, dough dividers,
+                cooling conveyors, provers, stackers, and packaging lines.
               </p>
               
               <p>

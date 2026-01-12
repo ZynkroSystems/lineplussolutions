@@ -9,7 +9,7 @@ const Contact = () => {
       <Navigation />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-16 md:pb-24 bg-gradient-to-b from-primary to-primary/90 text-primary-foreground">
+        <section className="pt-16 md:pt-20 pb-10 md:pb-12 bg-gradient-to-b from-primary to-primary/90 text-primary-foreground">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Get Professional Maintenance Support{" "}
