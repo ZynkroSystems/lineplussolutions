@@ -25,6 +25,7 @@ const QuickContactCard = () => {
         body: JSON.stringify({
           fullName: formData.get("fullName"),
           phone: formData.get("phone"),
+          email: formData.get("email"),
           message: formData.get("message"),
           source: "Quick Contact Card",
         }),
@@ -91,6 +92,13 @@ const QuickContactCard = () => {
           <Input name="fullName" placeholder="Full name" required className="h-10" />
           <Input name="phone" placeholder="Phone number" required className="h-10" />
         </div>
+        <Input
+          name="email"
+          type="email"
+          placeholder="Email address"
+          required
+          className="h-10"
+        />
         <Textarea name="message" placeholder="How can we help?" rows={2} required />
         <Button type="submit" className="w-full" disabled={isSubmitting}>
           {isSubmitting ? "Sending..." : "Request a Call Back"}
